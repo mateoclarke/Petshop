@@ -42,6 +42,11 @@
       root: $petRoot.find('.comments')
     });
 
+    var petScore = new PetScorePresenter({
+      comments: petComments,
+      root: $petRoot.find('.total-like-count')
+    });
+
     // Initialize with a single comment for easier "like" testing
     petComments.create({
       author: 'Bob',
